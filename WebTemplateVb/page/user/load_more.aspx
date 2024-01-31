@@ -62,7 +62,7 @@
                   </div> 
                 </div>
               </div>
-              <div class="table-responsive" style="height: 400px; overflow: auto; display:inline-block;">
+              <div id="accounts_table_res" class="table-responsive" style="height: 400px; overflow: auto; display:inline-block;">
                 <table id="accounts_table" class="table table-sm table-head-fixed text-nowrap table-hover">
                   <thead style="text-align: center;">
                     <tr>
