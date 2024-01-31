@@ -1,0 +1,22 @@
+#,ID Number,Full Name,Username,Password,Section,Role
+1,22-08675,"Alcantara, Vince Dale D.",vince,22-08675,IT,admin
+2,N/A,"TEST",TEST,TEST,IT,user
+3,N/A,"TESTING101",TESTING101,TESTING101,IT,user
+4,23-12345,"abcdefg",abcdefg,abcdefg,IT,user
+5,23-67890,"hijklmnop",hijklmnop,hijklmnop,IT,user
+6,23-13579,"qrstuv",qrstuv,qrstuv,IT,user
+7,23-02468,"wxyz",wxyz,wxyz,IT,user
+8,N/A,"TESTA",TESTA,TESTA,IT,user
+9,N/A,"'TESTING'",'TESTING','TESTING',IT,user
+10,N/A,"HA",ha,ah,IT,user
+11,N/A,"HE",he,eh,IT,user
+12,N/A,"HI",hi,ih,IT,user
+13,N=?,"N=?",N=?,N=?,IT,user
+14,Ò—a,"Ò—a",Ò—a,Ò—a,IT,user
+15,FFFfff,"FFFfff",FFFfff,FFFfff,IT,user
+16,???,"???",???,???,IT,user
+17,Clipyoko †?16,"Clipyoko †?16",Clipyoko †?16,Clipyoko †?16,IT,user
+SYSTEM ERROR:\nException from HRESULT: 0x800A0005 (CTL_E_ILLEGALFUNCTIONCALL)\nSystem.Runtime.InteropServices.COMException (0x800A0005): Exception from HRESULT: 0x800A0005 (CTL_E_ILLEGALFUNCTIONCALL)
+   at Microsoft.VisualBasic.CompilerServices.LateBinding.InternalLateCall(Object o, Type objType, String name, Object[] args, String[] paramnames, Boolean[] CopyBack, Boolean IgnoreReturn)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateCall(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack, Boolean IgnoreReturn)
+   at ASP.process_export_exp_accounts_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in C:\Users\Asus_X455L\source\repos\WebTemplateVb\WebTemplateVb\process\export\exp_accounts.aspx:line 73
