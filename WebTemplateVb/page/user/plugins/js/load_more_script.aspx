@@ -3,6 +3,24 @@ $( document ).ready(function() {
      search_accounts(1);
 });
 
+// Reference: Table Responsive Scroll Event (Body)
+/*window.onscroll = function(ev){
+if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    get_next_page();
+}*/
+
+// Table Responsive Scroll Event for Load More
+document.getElementById("accounts_table_res").addEventListener("scroll", function () {
+    var scrollTop = document.getElementById("accounts_table_res").scrollTop;
+    var scrollHeight = document.getElementById("accounts_table_res").scrollHeight;
+    var offsetHeight = document.getElementById("accounts_table_res").offsetHeight;
+
+    //check if the scroll reached the bottom
+    if ((offsetHeight + scrollTop + 1) >= scrollHeight) {
+        get_next_page();
+    }
+});
+
 const get_next_page = () => {
     var current_page = parseInt(sessionStorage.getItem('accounts_table_pagination'));
     let total = sessionStorage.getItem('count_rows');

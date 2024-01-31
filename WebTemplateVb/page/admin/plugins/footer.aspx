@@ -28,6 +28,8 @@
 <script src="../../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/popup_center.js"></script>
 
 </body>
 </html>
