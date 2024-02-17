@@ -2,7 +2,8 @@
     // AJAX IN PROGRESS GLOBAL VARS
     var search_accounts_ajax_in_progress = false;
 
-    $(document).ready(function () {
+    // DOMContentLoaded function
+    document.addEventListener("DOMContentLoaded", () => {
         search_accounts(1);
     });
 
@@ -13,7 +14,7 @@
     }*/
 
     // Table Responsive Scroll Event for Load More
-    document.getElementById("accounts_table_res").addEventListener("scroll", function () {
+    document.getElementById("accounts_table_res").addEventListener("scroll", () => {
         var scrollTop = document.getElementById("accounts_table_res").scrollTop;
         var scrollHeight = document.getElementById("accounts_table_res").scrollHeight;
         var offsetHeight = document.getElementById("accounts_table_res").offsetHeight;
@@ -51,7 +52,7 @@
             success: function (response) {
                 sessionStorage.setItem('count_rows', response);
                 var count = `Total: ${response}`;
-                $('#accounts_table_info').html(count);
+                document.getElementById("accounts_table_info").innerHTML = count;
 
                 if (response > 0) {
                     load_accounts_last_page();

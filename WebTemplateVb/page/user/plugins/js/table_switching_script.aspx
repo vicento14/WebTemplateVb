@@ -1,5 +1,6 @@
 <script type="text/javascript">
-    $(document).ready(function () {
+    // DOMContentLoaded function
+    document.addEventListener("DOMContentLoaded", () => {
         load_t_t1();
     });
 
@@ -17,8 +18,8 @@
             },
             success: function (response) {
                 $('#loading').remove();
-                $('#t_table').html(response);
-                $('#lbl_c1').html('');
+                document.getElementById("t_table").innerHTML = response;
+                document.getElementById("lbl_c1").innerHTML = '';
                 $('#t_t1_breadcrumb').hide();
             }
         });
@@ -41,8 +42,8 @@
             },
             success: function (response) {
                 $('#loading').remove();
-                $('#t_table').html(response);
-                $('#lbl_c1').html(c1);
+                document.getElementById("t_table").innerHTML = response;
+                document.getElementById("lbl_c1").innerHTML = c1;
                 $('#t_t1_breadcrumb').show();
             }
         });
