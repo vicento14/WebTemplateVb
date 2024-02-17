@@ -2,7 +2,8 @@
     // AJAX IN PROGRESS GLOBAL VARS
     var search_accounts_ajax_in_progress = false;
 
-    $(document).ready(function () {
+    // DOMContentLoaded function
+    document.addEventListener("DOMContentLoaded", () => {
         search_accounts(1, 0);
     });
 
@@ -121,7 +122,7 @@
                 //document.getElementById("count_rows").value = response;
                 sessionStorage.setItem('count_rows', response);
                 var count = `Total: ${response}`;
-                $('#accounts_table_info').html(count);
+                document.getElementById("accounts_table_info").innerHTML = count;
 
                 if (response > 0) {
                     load_accounts_pagination();
