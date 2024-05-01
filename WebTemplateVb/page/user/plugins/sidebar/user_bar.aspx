@@ -48,6 +48,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="ts_lm.aspx" class="<%= If(HttpContext.Current.Request.Url.AbsolutePath.EndsWith("ts_lm.aspx"), "nav-link active", "nav-link") %>">
+                        <i class="nav-icon far fa-file-alt"></i>
+                        <p>
+                            Table Switch + Load More
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="keyup_search.aspx" class="<%= If(HttpContext.Current.Request.Url.AbsolutePath.EndsWith("keyup_search.aspx"), "nav-link active", "nav-link") %>">
                         <i class="nav-icon far fa-file-alt"></i>
                         <p>
