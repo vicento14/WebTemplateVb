@@ -39,6 +39,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="sample1.aspx" class="<%= If(HttpContext.Current.Request.Url.AbsolutePath.EndsWith("sample1.aspx"), "nav-link active", "nav-link") %>">
+                        <i class="nav-icon fas fa-user-cog"></i>
+                        <p>
+                            Sample 1
+                        </p>
+                    </a>
+                </li>
                 <!--#include file ="logout.aspx"-->
             </ul>
         </nav>
