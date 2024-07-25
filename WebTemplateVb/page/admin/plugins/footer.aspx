@@ -31,6 +31,8 @@
 <script src="../../dist/js/adminlte.js"></script>
 <!-- Popup Center -->
 <script src="../../dist/js/popup_center.js"></script>
+<!-- Export CSV -->
+<script src="../../dist/js/export_csv.js"></script>
 <!-- Serialize -->
 <script src="../../dist/js/serialize.js"></script>
 
